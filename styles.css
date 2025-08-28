@@ -269,7 +269,8 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--bg-light);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80') center/cover no-repeat;
     overflow: hidden;
 }
 
@@ -281,9 +282,9 @@ p {
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(245, 158, 11, 0.2) 0%, transparent 50%);
     z-index: 1;
 }
 
@@ -302,6 +303,7 @@ p {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: fadeInUp 1s ease-out;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .highlight {
@@ -312,11 +314,12 @@ p {
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 3rem;
-    color: var(--text-muted);
+    color: var(--text-light);
     animation: fadeInUp 1s ease-out 0.2s both;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-buttons {
@@ -338,9 +341,10 @@ p {
 .scroll-arrow {
     width: 24px;
     height: 24px;
-    border-right: 3px solid var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
+    border-right: 3px solid var(--text-light);
+    border-bottom: 3px solid var(--text-light);
     transform: rotate(45deg);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 /* Services Section */
